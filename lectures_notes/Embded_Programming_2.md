@@ -33,11 +33,16 @@ void loop() {
 }
 ```
 
+```c++
+void setup()
+
+```
 ## functions
 - can be called from anywhere in the program
 - can be called multiple times
 - can be overloaded
 - can be recursive 
+- return a value should be declared before
 
 ## types of file for microcontroller
 1. .ino
