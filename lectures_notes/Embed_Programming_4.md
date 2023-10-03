@@ -99,7 +99,7 @@ void setup()
 void loop(){
  int temp =PINB
  temp = (temp>>4);
- temp= &=1;
+  temp= &=1;
  
  PORTB |= (temp<<5);
 
