@@ -15,7 +15,7 @@
 ## Assignment Operators
 
 | Operator |    Description     |      Example      |
-| :------: | :----------------: | :---------------: | --- | --- |
+| :------: | :----------------: | :---------------: | 
 |    =     |       Assign       |       a = b       |
 |    +=    |     Add assign     |      a += b       |
 |    -=    |     Sub assign     |      a -= b       |
