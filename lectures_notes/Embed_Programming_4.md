@@ -94,6 +94,7 @@ delay(1000);
 void setup()
 {
   DDRB = DDRB & ~(1<<5); // set pin 13 as input
+
 }
 
 void loop(){
