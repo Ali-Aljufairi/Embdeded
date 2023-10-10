@@ -146,7 +146,7 @@ float *fp =&x;
 
 uint32_t *ptr = (uint32_t*)fp;
 
-Serial.println("float value is decemial" ); 
+Serial.println("float his decemial" ); 
 
 Serial.println(*fp,BIN); 
 
