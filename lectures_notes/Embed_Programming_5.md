@@ -1,6 +1,5 @@
 ## Functions 
 
-
 ```C++
 //forward declaration
 int add(int a,int b)
@@ -13,13 +12,17 @@ void hello_world() {
 int add (int a, int b) {
    return a + b;
 }
+
 void setup() {
    Serial.begin(9600);
+
    hello_world();
+
 }
 ```
 
 ## global vs local variables vs static variables
+
  - global variables are declared outside of any function, and they can be accessed (used) on any function in the program.
 
 - local variables are declared inside a function, and they can be used only inside that function.
@@ -110,3 +113,16 @@ void func(float x) {
 
 
 > Static methods can be called without creating an object of the class.
+
+
+## Flash Optimization
+
+- Remove unused libraries
+- Unsed variables
+- Conditon that will never be true
+
+## SRAM Optimization
+
+- Remove Unused variables
+- Perfer local variables over global variables
+- use smallest variable type

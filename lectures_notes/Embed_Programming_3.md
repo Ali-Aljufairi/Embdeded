@@ -81,7 +81,7 @@ boolean y = false;
 
 ```
 
-> boolean is the same as bool.
+>   boolean is the same as bool.
 
 ## Data type casting
 

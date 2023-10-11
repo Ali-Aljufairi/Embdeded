@@ -1,7 +1,6 @@
 <!-- make table for arthmetic operators -->
 
 ## Arithmetic Operators
-
 | Operator | Description | Example |
 | :------: | :---------: | :-----: |
 |    +     |     Add     |  a + b  |
@@ -41,13 +40,16 @@
 |    >=    | Greater or equal | a >= b  |
 |    <=    |  Less or equal   | a <= b  |
 
+
 ## Logical Operators
+
 
 | Operator | Description | Example  |
 | :------: | :---------: | :------: |
 |    &&    | Logical AND |  a && b  |
 |   \|\|   | Logical OR  | a \|\| b |
 |    !     | Logical NOT |    !a    |
+
 
 ## Example function
 
