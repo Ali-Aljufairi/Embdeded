@@ -3,6 +3,9 @@
 - single board device thatcan be programmerd to interface with a variety of sensors and actuators. 
 
 
+## Software Support for UART
+> MCU vendors provide a library to support UART communication.
+
 ## code example 
 
 ```c++
