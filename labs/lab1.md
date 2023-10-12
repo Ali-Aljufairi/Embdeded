@@ -46,10 +46,16 @@ void setup(){
  ```
  
 
- Why uint8_t operations are faster than the float type? 
+ a. Why uint8_t operations are faster than the float type? 
 
 [Float point are more complex operation and require more processing ](https://electronics.stackexchange.com/questions/493554/does-the-avoid-using-floating-point-rule-of-thumb-apply-to-a-microcontroller-w 
 )
  
 
 [Floating-point operations require additional hardware to be performed, such as a floating-point unit (FPU) which is not present in a microncotroller which make their operation slower. ](https://electronics.stackexchange.com/questions/493554/does-the-avoid-using-floating-point-rule-of-thumb-apply-to-a-microcontroller-w )
+
+
+b. Remove the volatile keyword before variables a, b, and c. Re-run the code for any data type and any operation. What is the printed execution time value? Explain why you get such value. 
+
+[The printed execution time value for all the types is 0. Declaring a variable as volatile in Arduino code prevents the compiler from optimizing it, which can slow down the code
+
