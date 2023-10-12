@@ -1,4 +1,4 @@
-## Struct 
+## Struct
 
 ```c++
 struct my_struct {
@@ -23,12 +23,9 @@ void loop() {
 }
 ```
 
-
 > Struct is a user-defined data type in C/C++. It allows you to combine multiple variables of different data types into a single variable.
 
-
 ## Union
-
 
 ```c++
 union my_union {
@@ -53,8 +50,6 @@ union my_union {
 ```
 
 > union is a user-defined data type in C/C++. It allows you to combine multiple variables of different data types into a single variable. However, a union can only store the value of one member at a time.
-
-
 
 ## Bitfield
 
@@ -81,3 +76,28 @@ void loop() {
 ```
 
 > A bit field is a structure that allows the programmer to control how the data is packed into memory. This is especially useful when you are trying to save memory or when you are trying to send data over a network.
+
+## Enum
+
+```c++
+typedef enum {
+ p0 = 1,
+ p1 =(1<<1),
+ p2 =(1<<2),
+ p3 =(1<<3),
+ p4 =(1<<4),
+ p5 =(1<<5),
+ p6 =(1<<6),
+ p7 =(1<<7),
+}port_mask;
+
+
+void setup() {
+
+    Serial.begin(9600);
+
+    port_mask mask = p0 | p1 | p2;
+
+    DDRB |= mask;
+}
+```
