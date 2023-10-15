@@ -57,5 +57,5 @@ void setup(){
 
 b. Remove the volatile keyword before variables a, b, and c. Re-run the code for any data type and any operation. What is the printed execution time value? Explain why you get such value. 
 
-[The printed execution time value for all the types is 0. Declaring a variable as volatile in Arduino code prevents the compiler from optimizing it, which can slow down the code
+The printed execution time value for all the types is 0. Declaring a variable as volatile in Arduino code prevents the compiler from optimizing it, which can slow down the code
 
