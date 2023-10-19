@@ -20,6 +20,8 @@
 <h2 align ="center">Real Time Operating System RTOS</h2>
 
  > A real-time operating system (RTOS) is an operating system (OS) intended to serve real-time applications that process data as it comes in, typically without buffer delays.
+ 
+ > In freeRtos the port the kernel is the part that is specific to the microcontroller and the rest of the kernel is the same for all microcontrollers
 
 
 
