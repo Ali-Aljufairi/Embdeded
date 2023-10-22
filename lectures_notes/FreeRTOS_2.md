@@ -50,7 +50,7 @@ for (;;)
 }
 ```
 
-<h3 align="Center"> Task Delay </h3>
+<h3 align="Center"> vTaskDelay </h3>
 
 > The delay function is used to delay the execution of the task for a specific time which is not blocking the other tasks
 
@@ -68,8 +68,47 @@ void blink_task(void *pvParameters){
 }
 
 
+```
 
-    
+
+
+
+<h3 align="Center"> vTaskDelay until </h3>
+
+#### The function take 2 paramerters 
+ 
+  PxPerviousWakeTime pointer to variable that holds th etime at which the task was last unblokded
+
+  XTimeIncremenet : the cycyle time period the task will be unblocked  at time
+
+    $*pxPereviousWakeTime + XTimeIncrement$
+
+
+
+```C++
+
+void task2(void *pvparamaterts)
+ {
+
+  (void) pvParameters; 
+
+  TickType_t xLastWakeTime
+
+ for(;;)
+   {
+
+    Serial.println("Hello from task2")
+    vTaskDelay(&xLastWakeTime,(1000/portTick_PERIOD_MS))
+
+   }
+
+
+ }
+
+
+
+
 
 
 ```
+
