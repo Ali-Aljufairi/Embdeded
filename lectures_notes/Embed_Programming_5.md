@@ -30,6 +30,7 @@ void setup() {
 - static variables are declared with the static keyword, and can be used only inside the function where they are declared.
 
 ```C++
+        
 int global_variable = 10;
 
 
