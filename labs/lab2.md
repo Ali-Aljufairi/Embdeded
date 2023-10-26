@@ -1,6 +1,6 @@
 ### You are required to extend the support for the overloaded my_print() function discussed in Lab Tutorial 1 to include support for:
 
-- 	Int8_t, int16_t, int32_t signed data types.
+-     Int8_t, int16_t, int32_t signed data types.
 - he float data type (printing with a precision of three fraction digits).
 
 <br>
@@ -12,7 +12,7 @@ void setup() {
 }
 
 void loop() {
-  
+
   int8_t a = 8;
   my_print(a++);
   my_print("\n\r");//new line
@@ -29,7 +29,7 @@ void loop() {
   my_print(d);
   my_print("\n\r");//new line
 
-  
+
   while(1);
 }
 
@@ -41,9 +41,9 @@ void my_print(uint32_t x){
     USART_send_byte(48);//48 ASCII for 0
   }else{
     for(int i= (digits-1); i>=0; i--){
-    USART_send_byte(arr[i] + 48); 
+    USART_send_byte(arr[i] + 48);
   }
-  } 
+  }
 }
 //print a uint16_t
 void my_print(uint16_t x){
@@ -53,9 +53,9 @@ void my_print(uint16_t x){
     USART_send_byte(48);//48 ASCII for 0
   }else{
     for(int i= (digits-1); i>=0; i--){
-    USART_send_byte(arr[i] + 48); 
+    USART_send_byte(arr[i] + 48);
   }
-  } 
+  }
 }
 //print a uint8_t
 void my_print(uint8_t x){
@@ -65,9 +65,9 @@ void my_print(uint8_t x){
     USART_send_byte(48);//48 ASCII for 0
   }else{
     for(int i= (digits-1); i>=0; i--){
-    USART_send_byte(arr[i] + 48); 
+    USART_send_byte(arr[i] + 48);
   }
-  } 
+  }
 }
 //print a int32_t
 void my_print(int32_t x){
@@ -100,15 +100,15 @@ void my_print(float x) {
   uint8_t decimalPlaces = 3;
   int32_t intValue = int32_t(x);
   my_print(intValue); // Print the integer part
- 
+
   float decimalValue = x - float(intValue);
   if (decimalValue < 0) {
     decimalValue = -decimalValue; // Make it positive if it's negative
   }
- 
+
   // Print the decimal point
   USART_send_byte('.');
- 
+
   // Print the decimal part with the specified number of decimal places
   for (int i = 0; i < decimalPlaces; i++) {
     decimalValue *= 10;
