@@ -73,6 +73,13 @@ In Arudino we have 4 bytes of memory for storing the floating point value.
 
 ## Conversion float point
 
+[![FloatPoint](http://img.youtube.com/vi/gc1Nl3mmCuY/0.jpg)](http://www.youtube.com/watch?v=gc1Nl3mmCuY)
+
+
+
+
+
+
 ![Float point](images/float.jpg)
 
 ```C++
