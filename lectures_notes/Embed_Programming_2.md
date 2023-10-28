@@ -1,6 +1,6 @@
-## What is a microcontorller
+## What is a microcontorller ?
 
-> single board device thatcan be programmerd to interface with a variety of sensors and actuators.
+> single board device that can be programmed to interface with a variety of sensors and actuators.
 
 ## Software Support for UART
 
@@ -84,7 +84,10 @@ void setup(){
 
 > char array which is terminated by a null character '\0'
 
+
+
 ## define vs const
+
 
 ```c++
 
@@ -96,3 +99,6 @@ const  PI  = 3.14
 ```
 
 > The difference between the two is that the preprocessor directive is a simple text replacement, while the const declaration is a true variable declaration that the compiler can check for type correctness, etc.
+
+
+

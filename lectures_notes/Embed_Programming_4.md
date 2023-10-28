@@ -89,8 +89,7 @@ delay(1000);
 > Hello world of embedded programming
 
 
-## input Example
-
+## Input Example
 
 ```c++
 void setup()
@@ -107,3 +106,31 @@ void loop(){
  PORTB |= (temp<<5);
 
 }
+```
+
+<br>
+
+
+### Write a program to blink the LED connected to pin 13 with 1 second delay
+
+```c++
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main(void) {
+    // Set bit 5 of DDRB to 1 to configure it as an output
+    DDRB |= (1 << DDB5);
+
+    while (1) {
+        // Toggle bit 5 of PORTB (LED) by XORing it with 1
+        PORTB ^= (1 << PORTB5);
+
+        // Delay for 1 second
+        _delay_ms(1000);
+    }
+
+    return 0;
+}
+
+```
+

@@ -62,51 +62,27 @@ The heap is a block of memory that is used for dynamic memory allocation.
 
 ```C++
 
-//forward declaration
-void func(int x=10)
-void func(float x=10.0)
-
-Class Test {
-    public:
-    static void my_method(int x);{
-        // print int 
+class Test {
+  public:
+    static void my_method(int x) {
         Serial.println("This is int = " + String(x));
     }
-    
-    static void my_method(float x);{
-        // print float 
+
+    static void my_method(float x) {
         Serial.println("This is float = " + String(x));
     }
-
-
-}
-
+};
 
 void setup() {
-   func();
+  Serial.begin(9600);
+  float  y = 23.2 ;
+  Test::my_method(10);
+  Test::my_method(y); // Use static_cast to specify it's a float
 }
-
-
 
 void loop() {
-
-    func(20);
-
-    func(20.5);
+  while(1);
 }
-
-// make func that one return int and other func that return float same name
-
-void func(int x) {
-    Serial.println("This is int = " + String(x));
-
-}           
-
-
-void func(float x) {
-    Serial.println("This is float = " + String(x));
-
-}           
 
 ```
 
